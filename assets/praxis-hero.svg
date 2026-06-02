@@ -1,0 +1,36 @@
+<svg width="920" height="1080" viewBox="0 0 920 1080" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Visual corporativo financiero de PRAXIS">
+  <rect width="920" height="1080" rx="18" fill="#071426"/>
+  <rect x="56" y="56" width="808" height="968" rx="12" fill="#0B1F3A"/>
+  <path d="M108 844C231 677 359 602 493 619C627 636 733 551 812 365" stroke="#C9A24D" stroke-width="6" stroke-linecap="round"/>
+  <path d="M108 884C263 735 394 689 501 746C608 803 710 752 807 594" stroke="#E0BE70" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+  <rect x="110" y="142" width="342" height="190" rx="10" fill="#102C52"/>
+  <rect x="142" y="178" width="190" height="16" rx="8" fill="#E0BE70"/>
+  <rect x="142" y="216" width="256" height="12" rx="6" fill="#FFFFFF" opacity=".56"/>
+  <rect x="142" y="246" width="218" height="12" rx="6" fill="#FFFFFF" opacity=".28"/>
+  <rect x="142" y="282" width="126" height="24" rx="6" fill="#C9A24D"/>
+  <rect x="498" y="142" width="312" height="190" rx="10" fill="#FFFFFF"/>
+  <rect x="534" y="178" width="110" height="12" rx="6" fill="#C9A24D"/>
+  <rect x="534" y="216" width="226" height="12" rx="6" fill="#102C52" opacity=".25"/>
+  <rect x="534" y="246" width="188" height="12" rx="6" fill="#102C52" opacity=".16"/>
+  <circle cx="738" cy="280" r="26" fill="#C9A24D"/>
+  <rect x="110" y="392" width="700" height="118" rx="10" fill="#FFFFFF" opacity=".08"/>
+  <rect x="146" y="428" width="132" height="48" rx="8" fill="#C9A24D"/>
+  <rect x="312" y="430" width="196" height="12" rx="6" fill="#FFFFFF" opacity=".56"/>
+  <rect x="312" y="462" width="326" height="12" rx="6" fill="#FFFFFF" opacity=".2"/>
+  <rect x="110" y="570" width="196" height="244" rx="10" fill="#FFFFFF"/>
+  <rect x="150" y="712" width="36" height="64" rx="6" fill="#C9A24D"/>
+  <rect x="202" y="664" width="36" height="112" rx="6" fill="#102C52"/>
+  <rect x="254" y="620" width="36" height="156" rx="6" fill="#C9A24D"/>
+  <rect x="342" y="570" width="468" height="244" rx="10" fill="#102C52"/>
+  <rect x="384" y="620" width="178" height="14" rx="7" fill="#E0BE70"/>
+  <rect x="384" y="664" width="336" height="12" rx="6" fill="#FFFFFF" opacity=".46"/>
+  <rect x="384" y="696" width="286" height="12" rx="6" fill="#FFFFFF" opacity=".22"/>
+  <rect x="384" y="742" width="144" height="32" rx="8" fill="#C9A24D"/>
+  <circle cx="724" cy="712" r="48" stroke="#E0BE70" stroke-width="12" opacity=".9"/>
+  <circle cx="724" cy="712" r="82" stroke="#E0BE70" stroke-width="2" opacity=".22"/>
+  <rect x="110" y="872" width="700" height="54" rx="10" fill="#FFFFFF" opacity=".08"/>
+  <rect x="146" y="891" width="210" height="14" rx="7" fill="#FFFFFF" opacity=".55"/>
+  <rect x="604" y="887" width="166" height="22" rx="8" fill="#C9A24D"/>
+  <circle cx="766" cy="148" r="94" fill="#C9A24D" opacity=".09"/>
+  <circle cx="188" cy="930" r="132" fill="#C9A24D" opacity=".08"/>
+</svg>
