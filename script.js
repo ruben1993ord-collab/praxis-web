@@ -75,6 +75,7 @@ Object.keys(validationRules).forEach((fieldName) => {
 
 contactForm.addEventListener("submit", async (event) => {
   event.preventDefault();
+  await new Promise(resolve => setTimeout(resolve, 0));
 
   if (!validateForm()) {
     setStatus("error", "Revisa los campos marcados antes de enviar tu solicitud.");
