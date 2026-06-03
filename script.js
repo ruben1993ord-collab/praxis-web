@@ -1,4 +1,4 @@
-const WHATSAPP_URL = "https://wa.me/5212212302048?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20PRAXIS";
+const WHATSAPP_URL = "https://wa.me/5212218302048?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20PRAXIS";
 const FORM_SUCCESS_MESSAGE = "Gracias. Recibimos tu solicitud y un asesor de PRAXIS revisara tu caso.";
 const FORM_ERROR_MESSAGE = "No pudimos enviar tu solicitud en este momento. Intentalo de nuevo o contactanos por WhatsApp.";
 
