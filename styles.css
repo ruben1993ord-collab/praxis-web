@@ -1237,3 +1237,115 @@ main {
     padding-bottom: 80px;
   }
 }
+
+/* === SECCIÓN CONFIANZA PRAXIS === */
+.confianza {
+  background: #f8f9fa;
+  padding: 48px 0;
+  text-align: center;
+}
+
+.confianza-titulo {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.logos-instituciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.logos-instituciones img {
+  height: 40px;
+  opacity: 0.7;
+  filter: grayscale(100%);
+  transition: all 0.3s;
+}
+
+.logos-instituciones img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+.badge-experiencia {
+  background: #0066CC;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.badge-experiencia strong {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.badge-experiencia span {
+  font-size: 12px;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.testimonios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.testimonio-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.testimonio-card p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+.testimonio-autor {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testimonio-autor img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.testimonio-autor strong {
+  display: block;
+  font-size: 14px;
+}
+
+.testimonio-autor span {
+  font-size: 13px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .logos-instituciones {
+    gap: 24px;
+  }
+
+  .logos-instituciones img {
+    height: 32px;
+  }
+}
