@@ -126,3 +126,28 @@ document.querySelectorAll(".reveal").forEach((element, index) => {
   element.style.setProperty("--reveal-delay", `${Math.min(index % 5, 4) * 70}ms`);
   revealObserver.observe(element);
 });
+
+// Hamburguer Menu Toggle
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+const body = document.body;
+
+if (menuToggle && navLinks) {
+  const toggleMenu = () => {
+    const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
+    menuToggle.setAttribute("aria-expanded", !isExpanded);
+    navLinks.classList.toggle("is-active");
+    body.classList.toggle("menu-open"); // Prevent background scrolling when menu is open
+  };
+
+  menuToggle.addEventListener("click", toggleMenu);
+
+  // Close menu when clicking a link
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      menuToggle.setAttribute("aria-expanded", "false");
+      navLinks.classList.remove("is-active");
+      body.classList.remove("menu-open");
+    });
+  });
+}
