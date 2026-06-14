@@ -137,7 +137,8 @@ if (menuToggle && navLinks) {
     const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
     menuToggle.setAttribute("aria-expanded", !isExpanded);
     navLinks.classList.toggle("is-active");
-    body.classList.toggle("menu-open"); // Prevent background scrolling when menu is open
+    document.documentElement.classList.toggle("menu-open"); // Prevent background scrolling
+    body.classList.toggle("menu-open");
   };
 
   menuToggle.addEventListener("click", toggleMenu);
@@ -147,6 +148,7 @@ if (menuToggle && navLinks) {
     link.addEventListener("click", () => {
       menuToggle.setAttribute("aria-expanded", "false");
       navLinks.classList.remove("is-active");
+      document.documentElement.classList.remove("menu-open");
       body.classList.remove("menu-open");
     });
   });
