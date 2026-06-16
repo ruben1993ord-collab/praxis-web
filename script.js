@@ -1,9 +1,29 @@
 const WHATSAPP_URL = "https://wa.me/5212218302048?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20PRAXIS";
-const FORM_SUCCESS_MESSAGE = "Gracias. Recibimos tu solicitud y un asesor de PRAXIS revisara tu caso.";
-const FORM_ERROR_MESSAGE = "No pudimos enviar tu solicitud en este momento. Intentalo de nuevo o contactanos por WhatsApp.";
+const FORM_SUCCESS_MESSAGE = "Gracias. Recibimos tu solicitud y un asesor de PRAXIS revisará tu caso.";
+const FORM_ERROR_MESSAGE = "No pudimos enviar tu solicitud en este momento. Inténtalo de nuevo o contáctanos por WhatsApp.";
 
+// Analytics Event Measurement
+function trackEvent(eventName) {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: eventName,
+    timestamp: new Date().toISOString()
+  });
+  console.log(`[Event Tracked]: ${eventName}`);
+}
+
+// Bind click events to elements with data-event attributes
+document.querySelectorAll("[data-event]").forEach((element) => {
+  element.addEventListener("click", () => {
+    trackEvent(element.getAttribute("data-event"));
+  });
+});
+
+// Configure WhatsApp links without overwriting custom context parameters
 document.querySelectorAll(".js-whatsapp-link").forEach((link) => {
-  link.href = WHATSAPP_URL;
+  if (!link.getAttribute("href") || link.getAttribute("href") === "#") {
+    link.href = WHATSAPP_URL;
+  }
   link.target = "_blank";
   link.rel = "noopener noreferrer";
 });
@@ -16,15 +36,15 @@ const validationRules = {
   name: (value) => (value.trim().length >= 3 ? "" : "Escribe tu nombre completo."),
   phone: (value) => {
     const digits = value.replace(/\D/g, "");
-    return digits.length >= 8 ? "" : "Agrega un telefono valido para poder contactarte.";
+    return digits.length >= 8 ? "" : "Agrega un teléfono válido para poder contactarte.";
   },
-  service: (value) => (value ? "" : "Selecciona el tramite o tema que quieres revisar."),
+  service: (value) => (value ? "" : "Selecciona el trámite o tema que quieres revisar."),
   message: (value) => {
     if (!value.trim()) {
       return "";
     }
 
-    return value.trim().length >= 10 ? "" : "Agrega un poco mas de detalle sobre tu caso.";
+    return value.trim().length >= 10 ? "" : "Agrega un poco más de detalle sobre tu caso.";
   },
 };
 
@@ -102,6 +122,7 @@ contactForm.addEventListener("submit", async (event) => {
 
     contactForm.reset();
     setStatus("success", FORM_SUCCESS_MESSAGE);
+    trackEvent("click_diagnostico");
   } catch (error) {
     setStatus("error", FORM_ERROR_MESSAGE);
   } finally {
@@ -152,4 +173,22 @@ if (menuToggle && navLinks) {
       body.classList.remove("menu-open");
     });
   });
+}
+
+// Reveal the fixed WhatsApp bar only after the user leaves the hero section
+const mobileCtaBar = document.querySelector(".mobile-cta-bar");
+const heroSection = document.querySelector(".hero");
+
+if (mobileCtaBar && heroSection) {
+  const ctaObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        // Hidden while any part of the hero is visible; shown once scrolled past it
+        mobileCtaBar.classList.toggle("is-revealed", !entry.isIntersecting);
+      });
+    },
+    { threshold: 0 }
+  );
+
+  ctaObserver.observe(heroSection);
 }

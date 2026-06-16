@@ -4,14 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PRAXIS Consultoria Patrimonial | Asesoria AFORE, pensiones y Mejoravit</title>
+  <title>PRAXIS Consultoría Patrimonial | Asesoría en AFORE, Pensiones y Retiro</title>
   <meta name="description"
-    content="Asesoria clara y profesional para tramites AFORE, pensiones, Mejoravit, apoyo por desempleo, biometria y correccion de datos.">
-  <meta property="og:title" content="PRAXIS Consultoria Patrimonial">
+    content="Asesoría y acompañamiento patrimonial independiente. Especialistas en revisión de expedientes, planeación de pensiones, AFORE, IMSS y apoyo por desempleo.">
+  <link rel="icon" type="image/png" href="assets/logo_transparent.png">
+  <meta property="og:title" content="PRAXIS Consultoría Patrimonial">
   <meta property="og:description"
-    content="Acompanamiento profesional para revisar tu caso, aclarar dudas y avanzar con seguridad en tus tramites AFORE, pension y Mejoravit.">
+    content="Antes de retirar, aportar o pensionarte, revisa tu expediente. Orientación clara e independiente para tus trámites de AFORE y pensión.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/praxis-hero.svg">
+  <meta property="og:url" content="https://praxispatrimonial.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -19,27 +21,50 @@
     rel="stylesheet">
   <link rel="preload" href="styles.css" as="style">
   <link rel="stylesheet" href="styles.css">
+  
+  <!-- Schema LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "PRAXIS Consultoría Patrimonial",
+    "image": "https://praxispatrimonial.com/assets/logo_transparent.png",
+    "@id": "https://praxispatrimonial.com/#localbusiness",
+    "url": "https://praxispatrimonial.com/",
+    "telephone": "+5212218302048",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Puebla",
+      "addressCountry": "MX"
+    },
+    "description": "Consultoría y asesoría independiente para trámites relacionados con AFORE, pensiones del IMSS, Mejoravit y patrimonio laboral.",
+    "priceRange": "$$"
+  }
+  </script>
 </head>
 
 <body>
-  <header class="site-header" aria-label="Navegacion principal">
-    <a class="brand" href="#inicio" aria-label="PRAXIS Consultoria Patrimonial">
-      <span class="brand-logo-wrap">
-        <img class="brand-logo" src="assets/logo_transparent.png" alt="PRAXIS Consultoria Patrimonial">
+  <header class="site-header" aria-label="Navegación principal">
+    <a class="brand" href="#inicio" aria-label="PRAXIS Consultoría Patrimonial">
+      <span class="brand-text">
+        <span class="brand-name">PRAXIS</span>
+        <span class="brand-tag">Consultoría Patrimonial</span>
       </span>
     </a>
     <nav class="nav-links" id="nav-links" aria-label="Secciones">
+      <a href="#que-revisamos">Qué revisamos</a>
       <a href="#servicios">Servicios</a>
-      <a href="#beneficios">Beneficios</a>
-      <a href="#testimonios">Testimonios</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#como-trabajamos">Proceso</a>
+      <a href="#por-que-elegir-praxis">Por qué elegirnos</a>
+      <a href="#testimonios">Casos</a>
+      <a href="#faq">Preguntas frecuentes</a>
       <a class="nav-menu-cta js-whatsapp-link"
         href="https://wa.me/5212218302048?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20PRAXIS"
-        target="_blank" rel="noopener noreferrer">WhatsApp directo</a>
+        target="_blank" rel="noopener noreferrer" data-event="click_whatsapp_header">WhatsApp directo</a>
     </nav>
     <a class="header-cta js-whatsapp-link"
       href="https://wa.me/5212218302048?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20PRAXIS"
-      target="_blank" rel="noopener noreferrer">WhatsApp directo</a>
+      target="_blank" rel="noopener noreferrer" data-event="click_whatsapp_header">WhatsApp directo</a>
     <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
       <span class="hamburger-line"></span>
       <span class="hamburger-line"></span>
@@ -50,96 +75,253 @@
   <main id="inicio">
     <section class="hero section-shell">
       <div class="hero-copy reveal">
-        <p class="eyebrow">Asesoria patrimonial para decisiones importantes</p>
-        <h1>Avanza con seguridad en tus tramites AFORE, pension y Mejoravit.</h1>
-        <p class="hero-text">
-          En PRAXIS revisamos tu situacion con seriedad, resolvemos tus dudas con lenguaje claro y te
-          acompanamos paso a paso para que tomes decisiones informadas sobre tu patrimonio laboral.
+        <p class="eyebrow">Consultoría Patrimonial Independiente</p>
+        <h1>Antes de retirar, aportar o pensionarte, revisa tu expediente.</h1>
+        <p class="hero-text lead-strategic">
+          En PRAXIS revisamos tu situación AFORE, semanas cotizadas, documentos y posibles implicaciones antes de iniciar cualquier trámite.
         </p>
         <div class="hero-actions">
-          <!-- CTA Principal: verbo + beneficio -->
-          <a href="#contacto" class="btn-primary">Quiero mi diagnóstico gratis</a>
-
-          <!-- CTA Secundario WhatsApp -->
-          <a href="https://wa.me/5212218302048?text=Hola%20PRAXIS,%20quiero%20mi%20diagnostico%20gratis"
-            class="btn-whatsapp">
-            WhatsApp directo
+          <!-- CTA Principal: diagnóstico (formulario) -->
+          <a href="#contacto" class="primary-button" data-event="click_diagnostico">
+            Solicitar diagnóstico PRAXIS
           </a>
-        </div>
-        <!-- SECCIÓN CONFIANZA PRAXIS -->
-        <!-- FRANJA CONFIANZA - ABAJO DEL HERO -->
-        <div class="trust-bar">
-          <div class="container">
-            <span class="trust-text">Asesoría certificada y respaldada por:</span>
-            <div class="trust-logos">
-              <img
-                src="assets/consar.png"
-                alt="CONSAR">
-              <img
-                src="assets/condusef.png"
-                alt="CONDUSEF">
-              <img src="assets/imss.svg"
-                alt="IMSS">
-              <div class="badge-exp">
-                <strong>10+</strong>
-                <span>Años</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <p class="confianza-titulo">Respaldados por las instituciones que regulan tu AFORE</p>
 
-          <!-- Logos -->
-          <div class="logos-instituciones">
-            <img src="assets/consar.png" alt="CONSAR" loading="lazy">
-            <img src="assets/condusef.png" alt="CONDUSEF" loading="lazy">
-            <img src="assets/imss.svg" alt="IMSS" loading="lazy">
-            <div class="badge-experiencia">
-              <strong>15+</strong>
-              <span>Años de<br>experiencia</span>
-            </div>
-          </div>
-
-          <!-- Testimonios -->
-          <div class="testimonios">
-            <div class="testimonio-card">
-              <p>"Gracias a PRAXIS entendí mi estado de cuenta AFORE. Me ayudaron a recuperar $85,000 de Mejoravit que
-                no sabía que podía recuperar, principalmente por la rapidez."</p>
-              <div class="testimonio-autor">
-                <img src="https://i.pravatar.cc/80?img=5" alt="María G.">
-                <div>
-                  <strong>María G.</strong>
-                  <span>Maestra, Puebla</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="testimonio-card">
-              <p>"Pensé que me iba a pensionar con la pensión mínima hasta con 3 mil pesos. Con su diagnóstico vi que
-                puedo alcanzar hasta una pensión de $15,00 mensuales. garatia 100% recomendados."</p>
-              <div class="testimonio-autor">
-                <img src="https://i.pravatar.cc/80?img=12" alt="Roberto L.">
-                <div>
-                  <strong>Roberto L.</strong>
-                  <span>Obrero, Puebla</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- CTA Secundario: servicios -->
+          <a href="#servicios" class="secondary-button">
+            Ver servicios
+          </a>
         </div>
 
         <div class="hero-contact-pill reveal">
-          <span>Respuesta por WhatsApp</span>
-          <strong>Atencion clara, privada y sin presion comercial.</strong>
+          <span>Orientación personalizada</span>
+          <strong>Respuestas claras, privadas y sin presión comercial.</strong>
         </div>
       </div>
 
-    <div class="hero-visual reveal" aria-hidden="true">
-      <img src="assets/praxis-hero.svg" alt="">
-    </div>
+      <div class="hero-visual reveal" aria-hidden="true">
+        <img src="assets/praxis-hero.svg" alt="Ilustración de planeación patrimonial independiente de PRAXIS">
+      </div>
     </section>
 
+    <!-- FRANJA DE CONTEXTO - TEXTO SOBRIO, SIN LOGOS NI AVAL -->
+    <div class="trust-bar reveal">
+      <div class="container">
+        <span class="trust-text">Orientación sobre trámites relacionados con AFORE, IMSS e INFONAVIT.</span>
+      </div>
+    </div>
+
+    <!-- AVISO PREVENTIVO: PRIMERO CLARIDAD, DESPUÉS DECISIÓN -->
+    <section class="advisory-band" aria-label="Aviso preventivo">
+      <div class="section-shell">
+        <div class="advisory-inner reveal">
+          <span class="advisory-eyebrow">Primero claridad. Después decisión.</span>
+          <p>Antes de iniciar cualquier trámite, revisamos tu situación, documentos y posibles implicaciones para que tomes una decisión informada.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: QUÉ REVISAMOS -->
+    <section class="what-we-check" id="que-revisamos" aria-labelledby="check-title">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Diagnóstico Preventivo</p>
+          <h2 id="check-title">¿Qué revisamos en tu expediente?</h2>
+          <p>
+            Antes de iniciar cualquier trámite o tomar una decisión con tu patrimonio, realizamos un diagnóstico preventivo para validar tu historial laboral y corregir inconsistencias a tiempo.
+          </p>
+        </div>
+        <div class="check-grid">
+          <article class="check-card reveal">
+            <div class="check-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+            <h3>Semanas cotizadas</h3>
+            <p>Revisamos el registro de tus semanas ante el IMSS para ayudarte a identificar si cada periodo laborado está correctamente contabilizado.</p>
+          </article>
+          
+          <article class="check-card reveal">
+            <div class="check-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+            </div>
+            <h3>Consistencia de datos</h3>
+            <p>Buscamos duplicidades o errores en tu nombre, CURP, RFC o Número de Seguridad Social (NSS) que puedan detener tus trámites.</p>
+          </article>
+
+          <article class="check-card reveal">
+            <div class="check-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h3>Expediente biométrico</h3>
+            <p>Validamos que tu expediente de identificación digital en el SAR esté completo y con tus datos biométricos vigentes.</p>
+          </article>
+
+          <article class="check-card reveal">
+            <div class="check-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </div>
+            <h3>Subcuenta de vivienda</h3>
+            <p>Revisamos tu saldo acumulado en el Infonavit y analizamos contigo la viabilidad de apoyos como Mejoravit.</p>
+          </article>
+
+          <article class="check-card reveal">
+            <div class="check-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+              </svg>
+            </div>
+            <h3>Régimen de retiro</h3>
+            <p>Te ayudamos a identificar si cotizas bajo la Ley 73 o la Ley 97 para orientarte sobre el camino adaptado a tus derechos.</p>
+          </article>
+
+          <article class="check-card reveal">
+            <div class="check-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3>Elegibilidad de apoyos</h3>
+            <p>Revisamos contigo si cumples con las condiciones de ley para tramitar el retiro parcial por desempleo de forma ordenada e informada.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: SERVICIOS -->
+    <section class="services" id="servicios">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Servicios Especializados</p>
+          <h2>Orientación clara para trámites que requieren cuidado y precisión.</h2>
+          <p>
+            Te ayudamos a entender requisitos, detectar inconsistencias y preparar una ruta ordenada antes de iniciar o continuar tu trámite.
+          </p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <span class="service-icon">01</span>
+            <h3>Apoyo por desempleo</h3>
+            <p>Analizamos si cumples las condiciones, qué documentos necesitas y qué efectos debes considerar en tus semanas antes de solicitarlo.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon">02</span>
+            <h3>Planificación de pensión</h3>
+            <p>Te ayudamos a interpretar semanas cotizadas, régimen aplicable, posibles escenarios de retiro y los pasos para planear mejor tu pensión.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon">03</span>
+            <h3>Mejoravit</h3>
+            <p>Revisamos tus requisitos, saldo disponible en subcuenta de vivienda y te explicamos el proceso para que evalúes el crédito con información clara.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon">04</span>
+            <h3>Actualización biométrica</h3>
+            <p>Te orientamos para actualizar tu expediente digital ante la AFORE y reducir contratiempos al realizar operaciones futuras.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="service-icon">05</span>
+            <h3>Corrección de datos AFORE</h3>
+            <p>Identificamos discrepancias en tu información personal (NSS, CURP, RFC) y te guiamos sobre la ruta para unificarlos correctamente.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: CÓMO TRABAJAMOS -->
+    <section class="how-we-work" id="como-trabajamos" aria-labelledby="process-title">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Metodología Clara</p>
+          <h2 id="process-title">¿Cómo trabajamos?</h2>
+          <p>
+            Un proceso estructurado, transparente y ordenado paso a paso para brindarte certeza y acompañamiento en cada etapa de tu patrimonio laboral.
+          </p>
+        </div>
+
+        <div class="process-timeline-container">
+          <div class="process-steps-grid">
+            <!-- Paso 1 -->
+            <article class="process-step-card reveal">
+              <div class="step-header">
+                <span class="step-number">01</span>
+                <div class="step-icon-wrap" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </div>
+              </div>
+              <h3>Evaluación Inicial</h3>
+              <p>Analizamos detalladamente tu situación actual ante el IMSS/AFORE y resolvemos tus dudas iniciales sin compromiso.</p>
+            </article>
+
+            <!-- Paso 2 -->
+            <article class="process-step-card reveal">
+              <div class="step-header">
+                <span class="step-number">02</span>
+                <div class="step-icon-wrap" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                  </svg>
+                </div>
+              </div>
+              <h3>Revisión documental</h3>
+              <p>Verificamos minuciosamente que tu información, semanas cotizadas y documentos estén correctos para evitar rechazos o contratiempos.</p>
+            </article>
+
+            <!-- Paso 3 -->
+            <article class="process-step-card reveal">
+              <div class="step-header">
+                <span class="step-number">03</span>
+                <div class="step-icon-wrap" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                  </svg>
+                </div>
+              </div>
+              <h3>Estrategia personalizada</h3>
+              <p>Te explicamos con total claridad las alternativas legales viables y definimos la mejor ruta estratégica para tu caso.</p>
+            </article>
+
+            <!-- Paso 4 -->
+            <article class="process-step-card reveal">
+              <div class="step-header">
+                <span class="step-number">04</span>
+                <div class="step-icon-wrap" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+              </div>
+              <h3>Acompañamiento integral</h3>
+              <p>Te acompañamos con gestiones ordenadas durante todo el proceso de tu trámite, manteniéndote informado en cada etapa.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: POR QUÉ ELEGIR PRAXIS -->
     <section class="why-choose-praxis" id="por-que-elegir-praxis" aria-labelledby="why-title">
       <div class="section-shell why-layout">
         <!-- Columna Izquierda: Introducción y Acompañamiento -->
@@ -147,8 +329,7 @@
           <p class="eyebrow">Diferenciación y Seguridad</p>
           <h2 id="why-title">¿Por qué elegir PRAXIS?</h2>
           <p class="why-intro-text">
-            Tu tranquilidad patrimonial es nuestro único objetivo. Nos alejamos de las gestiones masivas 
-            para ofrecerte una consultoría de alta fidelidad: humana, transparente y rigurosamente profesional.
+            Tu tranquilidad patrimonial es nuestro único objetivo. Nos alejamos de las gestiones masivas para ofrecerte una consultoría de alta fidelidad: humana, transparente y rigurosamente profesional.
           </p>
           
           <!-- Distintivo de Atención Personalizada -->
@@ -192,7 +373,7 @@
             </div>
             <div class="pillar-content">
               <h3>Soluciones a tu medida</h3>
-              <p>Tu historial laboral es único. No aplicamos formatos genéricos; diseñamos la ruta de trámite que maximiza tus derechos específicos.</p>
+              <p>Tu historial laboral es único. No aplicamos formatos genéricos; revisamos las opciones disponibles según tus derechos específicos.</p>
             </div>
           </article>
 
@@ -205,7 +386,7 @@
             </div>
             <div class="pillar-content">
               <h3>Gestión profesional y ordenada</h3>
-              <p>Nos encargamos del orden de tus gestiones para mitigar contratiempos con las instituciones y asegurar trámites exitosos.</p>
+              <p>Nos encargamos del orden de tus gestiones para reducir contratiempos con las instituciones durante el proceso.</p>
             </div>
           </article>
 
@@ -239,199 +420,62 @@
       </div>
     </section>
 
-    <section class="services" id="servicios">
-      <div class="section-shell">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Servicios especializados</p>
-          <h2>Orientacion clara para tramites que requieren cuidado y precision.</h2>
-          <p>
-            Te ayudamos a entender requisitos, detectar posibles inconsistencias y preparar una ruta ordenada
-            antes de iniciar o continuar tu tramite.
-          </p>
-        </div>
-        <div class="service-grid">
-          <article class="service-card reveal">
-            <span class="service-icon">01</span>
-            <h3>Apoyo por desempleo</h3>
-            <p>Analizamos si cumples las condiciones, que documentos necesitas y que efectos debes considerar antes de
-              solicitarlo.</p>
-          </article>
-          <article class="service-card reveal">
-            <span class="service-icon">02</span>
-            <h3>Pensiones</h3>
-            <p>Te ayudamos a interpretar semanas cotizadas, regimen aplicable, posibles escenarios y pasos para planear
-              mejor.</p>
-          </article>
-          <article class="service-card reveal">
-            <span class="service-icon">03</span>
-            <h3>Mejoravit</h3>
-            <p>Revisamos requisitos y te explicamos el proceso para que evalues el credito con informacion clara.</p>
-          </article>
-          <article class="service-card reveal">
-            <span class="service-icon">04</span>
-            <h3>Actualizacion biometrica</h3>
-            <p>Te orientamos para actualizar tu expediente y reducir contratiempos al realizar operaciones futuras.</p>
-          </article>
-          <article class="service-card reveal">
-            <span class="service-icon">05</span>
-            <h3>Correccion de datos AFORE</h3>
-            <p>Identificamos errores o diferencias en tu informacion y te guiamos sobre la ruta para corregirlos.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="how-we-work" id="como-trabajamos" aria-labelledby="process-title">
-      <div class="section-shell">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Metodología Clara</p>
-          <h2 id="process-title">¿Cómo trabajamos?</h2>
-          <p>
-            Un proceso estructurado, transparente y ordenado paso a paso para brindarte
-            certeza y acompañamiento en cada etapa de tu patrimonio laboral.
-          </p>
-        </div>
-
-        <div class="process-timeline-container">
-          <div class="process-steps-grid">
-            <!-- Paso 1 -->
-            <article class="process-step-card reveal">
-              <div class="step-header">
-                <span class="step-number">01</span>
-                <div class="step-icon-wrap" aria-hidden="true">
-                  <!-- Icono: Búsqueda / Diagnóstico (Lupa elegante) -->
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                  </svg>
-                </div>
-              </div>
-              <h3>Evaluación Inicial</h3>
-              <p>Analizamos detalladamente tu situación actual ante el IMSS/AFORE y resolvemos tus dudas iniciales sin compromiso.</p>
-            </article>
-
-            <!-- Paso 2 -->
-            <article class="process-step-card reveal">
-              <div class="step-header">
-                <span class="step-number">02</span>
-                <div class="step-icon-wrap" aria-hidden="true">
-                  <!-- Icono: Revisión Documental (Carpeta / Documento con check) -->
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                    <polyline points="14 2 14 8 20 8"></polyline>
-                    <line x1="16" y1="13" x2="8" y2="13"></line>
-                    <line x1="16" y1="17" x2="8" y2="17"></line>
-                    <polyline points="10 9 9 9 8 9"></polyline>
-                  </svg>
-                </div>
-              </div>
-              <h3>Revisión documental</h3>
-              <p>Verificamos minuciosamente que tu información, semanas cotizadas y documentos estén correctos para evitar rechazos o contratiempos.</p>
-            </article>
-
-            <!-- Paso 3 -->
-            <article class="process-step-card reveal">
-              <div class="step-header">
-                <span class="step-number">03</span>
-                <div class="step-icon-wrap" aria-hidden="true">
-                  <!-- Icono: Estrategia Personalizada (Mapa / Brújula / Ruta) -->
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
-                  </svg>
-                </div>
-              </div>
-              <h3>Estrategia personalizada</h3>
-              <p>Te explicamos con total claridad las alternativas legales viables y definimos la mejor ruta estratégica para maximizar tus beneficios.</p>
-            </article>
-
-            <!-- Paso 4 -->
-            <article class="process-step-card reveal">
-              <div class="step-header">
-                <span class="step-number">04</span>
-                <div class="step-icon-wrap" aria-hidden="true">
-                  <!-- Icono: Acompañamiento Integral (Apretón de manos / Escudo / Seguridad) -->
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                  </svg>
-                </div>
-              </div>
-              <h3>Acompañamiento integral</h3>
-              <p>Te guiamos y respaldamos con gestiones ordenadas durante todo el proceso hasta la conclusión exitosa de tu trámite.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIOS -->
+    <!-- EXPERIENCIAS: INSTITUCIONAL, SOBRIO, SIN FOTOS DE STOCK -->
     <section class="testimonios-section" id="testimonios">
-      <div class="container">
-        <h2 class="section-title">Lo que dicen nuestros clientes</h2>
-        <div class="testimonios-grid">
-          <div class="testimonio-card">
-            <p>"Gracias a PRAXIS entendí mi estado de cuenta AFORE. Me ayudaron a recuperar $85,000 de Mejoravit que no
-              sabía que podía recuperar, principalmente por la rapidez."</p>
-            <div class="testimonio-autor">
-              <img src="https://i.pravatar.cc/80?img=5" alt="María G.">
-              <div>
-                <strong>María G.</strong>
-                <span>Maestra, Puebla</span>
-              </div>
-            </div>
-          </div>
-          <div class="testimonio-card">
-            <p>"Pensé que me iba a pensionar con la pensión mínima. Con su diagnóstico vi que puedo alcanzar hasta una
-              pensión de $15,000 mensuales. 100% recomendados."</p>
-            <div class="testimonio-autor">
-              <img src="https://i.pravatar.cc/80?img=12" alt="Roberto L.">
-              <div>
-                <strong>Roberto L.</strong>
-                <span>Obrero, Puebla</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="testimonials" id="testimonios">
       <div class="section-shell">
         <div class="section-heading reveal">
           <p class="eyebrow">Experiencias</p>
-          <h2>Clientes que buscaban claridad antes de tomar una decision.</h2>
+          <h2>Casos atendidos con claridad</h2>
+          <p>Cada caso se revisa de forma individual para orientar al cliente con claridad, orden documental y cero presión comercial.</p>
         </div>
-        <div class="testimonial-grid">
-          <figure class="testimonial-card reveal">
-            <blockquote>
-              "Tenia dudas y miedo de hacer algo mal. Me explicaron el proceso con calma y supe que pasos seguir."
-            </blockquote>
-            <figcaption>Cliente PRAXIS - Apoyo por desempleo</figcaption>
-          </figure>
-          <figure class="testimonial-card reveal">
-            <blockquote>
-              "Detectaron inconsistencias en mis datos y me orientaron antes de iniciar el tramite."
-            </blockquote>
-            <figcaption>Cliente PRAXIS - Correccion AFORE</figcaption>
-          </figure>
-          <figure class="testimonial-card reveal">
-            <blockquote>
-              "La atencion fue seria, clara y sin presion. Eso me dio confianza para continuar."
-            </blockquote>
-            <figcaption>Cliente PRAXIS - Pension</figcaption>
-          </figure>
+        <div class="testimonios-grid">
+          <article class="testimonio-card reveal">
+            <span class="exp-tag">AFORE</span>
+            <p>"Tenía dudas sobre mi cuenta individual y el proceso a seguir. En PRAXIS me explicaron mis opciones con claridad y me ayudaron a ordenar la información antes de avanzar."</p>
+            <div class="testimonio-autor">
+              <span class="exp-avatar" aria-hidden="true">M.G.</span>
+              <div class="exp-meta">
+                <strong>M.G.</strong>
+                <span>Puebla</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonio-card reveal">
+            <span class="exp-tag">Pensión</span>
+            <p>"Pensaba que planear mi pensión era demasiado complicado. Revisaron mi historial laboral, detectaron puntos importantes y me explicaron los pasos de forma sencilla."</p>
+            <div class="testimonio-autor">
+              <span class="exp-avatar" aria-hidden="true">R.L.</span>
+              <div class="exp-meta">
+                <strong>R.L.</strong>
+                <span>Puebla</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonio-card reveal">
+            <span class="exp-tag">Corrección de datos</span>
+            <p>"Me orientaron sobre inconsistencias en mis datos y qué documentos debía revisar. La atención fue clara, privada y sin presión."</p>
+            <div class="testimonio-autor">
+              <span class="exp-avatar" aria-hidden="true">A.C.</span>
+              <div class="exp-meta">
+                <strong>A.C.</strong>
+                <span>Puebla</span>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
+    <!-- FORMULARIO DE CONTACTO -->
     <section class="contact" id="contacto">
       <div class="section-shell contact-layout">
         <div class="contact-copy reveal">
           <p class="eyebrow">Hablemos de tu caso</p>
-          <h2>Recibe una primera orientacion clara y sin compromiso.</h2>
+          <h2>Recibe una primera orientación clara y sin compromiso.</h2>
           <p>
-            Comparte tus datos de contacto y el servicio que necesitas. Prepararemos un mensaje de WhatsApp
-            para iniciar la conversacion de forma ordenada.
+            Comparte tus datos de contacto y el servicio que necesitas. Realizaremos un diagnóstico inicial para evaluar las alternativas de tu caso de forma ordenada.
           </p>
           <div class="contact-quickinfo" aria-label="Resumen de contacto">
             <div>
@@ -444,86 +488,156 @@
             </div>
             <div>
               <span>Privacidad</span>
-              <strong>Datos tratados con discrecion</strong>
+              <strong>Datos tratados con discreción</strong>
             </div>
           </div>
           <div class="contact-note">
-            Para tu seguridad, no compartas documentos personales o informacion sensible hasta recibir
-            indicaciones claras de un asesor.
+            Para tu seguridad, no compartas documentos personales o información sensible hasta recibir indicaciones de tu asesor asignado.
           </div>
         </div>
-        <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/mnjrezrb" method="POST"
-          novalidate>
+        <form class="contact-form reveal" id="contactForm" action="https://formspree.io/f/mnjrezrb" method="POST" novalidate>
           <label class="form-field">
             Nombre completo
             <input name="name" type="text" autocomplete="name" minlength="3" required>
             <span class="field-message" data-error-for="name"></span>
           </label>
           <label class="form-field">
-            Telefono
+            Teléfono / WhatsApp
             <input name="phone" type="tel" autocomplete="tel" inputmode="tel" minlength="8" required>
             <span class="field-message" data-error-for="phone"></span>
           </label>
           <label class="form-field">
-            Tramite o tema de interes
+            Trámite o tema de interés
             <select name="service" required>
-              <option value="">Selecciona una opcion</option>
+              <option value="">Selecciona una opción</option>
               <option>Apoyo por desempleo</option>
               <option>Pensiones</option>
               <option>Mejoravit</option>
-              <option>Actualizacion biometrica</option>
-              <option>Correccion de datos AFORE</option>
+              <option>Actualización biométrica</option>
+              <option>Corrección de datos AFORE</option>
             </select>
             <span class="field-message" data-error-for="service"></span>
           </label>
           <label class="form-field">
-            Mensaje
-            <textarea name="message" rows="4" minlength="10"
-              placeholder="Cuentanos brevemente que duda o tramite necesitas revisar"></textarea>
+            Mensaje (Opcional)
+            <textarea name="message" rows="4" minlength="10" placeholder="Cuéntanos brevemente qué duda o trámite necesitas revisar"></textarea>
             <span class="field-message" data-error-for="message"></span>
           </label>
           <input type="hidden" name="_subject" value="Nuevo contacto desde landing PRAXIS">
-          <button class="primary-button submit-button" type="submit">
-            <span class="button-label">Enviar solicitud de asesoria</span>
+          <button class="primary-button submit-button" type="submit" data-event="click_diagnostico">
+            <span class="button-label">Enviar solicitud de diagnóstico</span>
             <span class="button-loading" aria-hidden="true"></span>
           </button>
           <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
         </form>
       </div>
     </section>
+
+    <!-- PREGUNTAS FRECUENTES (FAQs) -->
+    <section class="faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Aclaraciones</p>
+          <h2 id="faq-title">Preguntas frecuentes</h2>
+          <p>Resolvemos tus dudas iniciales sobre nuestro servicio y las gestiones patrimoniales.</p>
+        </div>
+        
+        <div class="faq-accordion-container">
+          <details class="faq-item reveal">
+            <summary>
+              <h3>¿PRAXIS es una institución oficial o gubernamental?</h3>
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>No. PRAXIS es una consultoría patrimonial de carácter privado e independiente. Ofrecemos orientación, revisión de expedientes y acompañamiento informativo para ayudarte a gestionar tus trámites ante las instituciones correspondientes.</p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>
+              <h3>¿Por qué debo revisar mi expediente antes de iniciar un trámite?</h3>
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>Pequeñas discrepancias en tu nombre, CURP, RFC o semanas cotizadas pueden causar que tu AFORE o el IMSS rechacen tu solicitud de pensión, retiro por desempleo o Mejoravit. Un diagnóstico preventivo te ayuda a identificar y corregir estos errores a tiempo.</p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>
+              <h3>¿El diagnóstico inicial de mi expediente tiene costo?</h3>
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>Ofrecemos una primera evaluación general de tu caso sin costo. Analizamos la viabilidad de tu expediente y te explicamos las alternativas para que decidas libremente y sin presiones comerciales cómo proceder.</p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal">
+            <summary>
+              <h3>¿Qué documentos confidenciales debo compartir al inicio?</h3>
+              <span class="faq-arrow" aria-hidden="true"></span>
+            </summary>
+            <div class="faq-answer">
+              <p>Para la primera asesoría informativa no requerimos documentos sensibles ni claves de acceso personales. Solo conversamos sobre tu estatus y dudas generales para iniciar tu diagnóstico inicial con claridad.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- AVISO INFORMATIVO (DISCLAIMER) -->
+    <section class="disclaimer-section" aria-label="Aviso legal">
+      <div class="section-shell">
+        <div class="disclaimer-box reveal">
+          <p>
+            <strong>Aviso de Independencia:</strong> PRAXIS es una consultoría patrimonial de carácter privado e independiente. No formamos parte de ninguna institución gubernamental (IMSS, Infonavit, CONSAR) ni somos una Administradora de Fondos para el Retiro (AFORE). Nuestra labor es exclusivamente de asesoría, orientación y acompañamiento informativo. Cada trámite y resolución final está sujeto al cumplimiento de requisitos y a la validación de las autoridades oficiales correspondientes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL A WHATSAPP -->
+    <section class="final-cta" aria-labelledby="cta-title">
+      <div class="section-shell final-cta-layout reveal">
+        <h2 id="cta-title">¿Listo para resolver tus dudas sobre tu patrimonio laboral?</h2>
+        <p>Recibe orientación profesional, clara y sin presión. Iniciemos la conversación ahora mismo.</p>
+        <a class="primary-button final-cta-btn js-whatsapp-link"
+           href="https://wa.me/5212218302048?text=Hola%20PRAXIS,%20quiero%20iniciar%20mi%20revision%20de%20expediente"
+           target="_blank" rel="noopener noreferrer" data-event="click_whatsapp_sticky">
+          <span class="whatsapp-icon" aria-hidden="true">
+            <svg viewBox="0 0 32 32">
+              <path d="M16.04 3.4c-6.88 0-12.48 5.56-12.48 12.4 0 2.2.58 4.34 1.7 6.22L3.46 28.6l6.76-1.76a12.56 12.56 0 0 0 5.82 1.42c6.88 0 12.48-5.56 12.48-12.4S22.92 3.4 16.04 3.4Zm0 22.76c-1.82 0-3.6-.48-5.16-1.38l-.38-.22-4.02 1.04 1.08-3.88-.26-.4a10.2 10.2 0 0 1-1.62-5.52c0-5.68 4.64-10.3 10.36-10.3 5.7 0 10.34 4.62 10.34 10.3s-4.64 10.36-10.34 10.36Zm5.66-7.72c-.3-.16-1.82-.9-2.1-1-.28-.1-.48-.16-.7.16-.2.3-.8 1-.98 1.2-.18.22-.36.24-.66.08-.3-.16-1.3-.48-2.48-1.52-.92-.82-1.54-1.84-1.72-2.14-.18-.32-.02-.48.14-.64.14-.14.3-.36.46-.54.16-.18.2-.3.3-.52.1-.2.06-.38-.02-.54-.08-.16-.7-1.68-.96-2.3-.26-.6-.52-.52-.7-.54h-.6c-.2 0-.54.08-.82.38-.28.32-1.08 1.06-1.08 2.58s1.1 2.98 1.26 3.18c.16.22 2.18 3.32 5.28 4.66.74.32 1.32.5 1.76.64.74.24 1.42.2 1.96.12.6-.1 1.82-.74 2.08-1.46.26-.72.26-1.34.18-1.46-.08-.14-.28-.22-.6-.38Z" />
+            </svg>
+          </span>
+          Hablar con un asesor por WhatsApp
+        </a>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="section-shell footer-content">
-      <span>PRAXIS Consultoria Patrimonial</span>
-      <span>Orientacion privada para tramites patrimoniales, AFORE y pension.</span>
+      <span>PRAXIS Consultoría Patrimonial</span>
+      <span>Orientación privada para trámites patrimoniales, AFORE y pensión.</span>
     </div>
   </footer>
 
-
-  <div class="mobile-cta-bar" aria-label="Acciones rapidas">
+  <div class="mobile-cta-bar" aria-label="Acción rápida">
     <a class="mobile-cta mobile-cta-primary js-whatsapp-link"
-      href="https://wa.me/5212218302048?text=Hola%20quiero%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20PRAXIS"
-      target="_blank" rel="noopener noreferrer">
+      href="https://wa.me/5212218302048?text=Hola%20PRAXIS%2C%20quiero%20solicitar%20mi%20diagn%C3%B3stico%20de%20expediente"
+      target="_blank" rel="noopener noreferrer" data-event="click_whatsapp_sticky">
       <span class="whatsapp-icon" aria-hidden="true">
         <svg viewBox="0 0 32 32" focusable="false">
           <path
             d="M16.04 3.4c-6.88 0-12.48 5.56-12.48 12.4 0 2.2.58 4.34 1.7 6.22L3.46 28.6l6.76-1.76a12.56 12.56 0 0 0 5.82 1.42c6.88 0 12.48-5.56 12.48-12.4S22.92 3.4 16.04 3.4Zm0 22.76c-1.82 0-3.6-.48-5.16-1.38l-.38-.22-4.02 1.04 1.08-3.88-.26-.4a10.2 10.2 0 0 1-1.62-5.52c0-5.68 4.64-10.3 10.36-10.3 5.7 0 10.34 4.62 10.34 10.3s-4.64 10.36-10.34 10.36Zm5.66-7.72c-.3-.16-1.82-.9-2.1-1-.28-.1-.48-.16-.7.16-.2.3-.8 1-.98 1.2-.18.22-.36.24-.66.08-.3-.16-1.3-.48-2.48-1.52-.92-.82-1.54-1.84-1.72-2.14-.18-.32-.02-.48.14-.64.14-.14.3-.36.46-.54.16-.18.2-.3.3-.52.1-.2.06-.38-.02-.54-.08-.16-.7-1.68-.96-2.3-.26-.6-.52-.52-.7-.54h-.6c-.2 0-.54.08-.82.38-.28.32-1.08 1.06-1.08 2.58s1.1 2.98 1.26 3.18c.16.22 2.18 3.32 5.28 4.66.74.32 1.32.5 1.76.64.74.24 1.42.2 1.96.12.6-.1 1.82-.74 2.08-1.46.26-.72.26-1.34.18-1.46-.08-.14-.28-.22-.6-.38Z" />
         </svg>
       </span>
-      WhatsApp
+      Solicitar diagnóstico por WhatsApp
     </a>
-    <a class="mobile-cta mobile-cta-secondary" href="#contacto">Formulario</a>
   </div>
 
   <script src="script.js" defer></script>
-  <!-- BOTÓN STICKY MÓVIL: Siempre visible -->
-  <div class="sticky-cta">
-    <a href="https://wa.me/5212218302048?text=Hola%20PRAXIS,%20quiero%20mi%20diagnostico%20gratis"
-      class="btn-whatsapp-sticky">
-      📱 Hablar por WhatsApp
-    </a>
-  </div>
 </body>
 
 </html>
